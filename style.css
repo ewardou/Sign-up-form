@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{ 
+    display: flex;
+    height: 100vh;
+}
+.image{
+    width: 35vw;
+    background-color:rgb(27, 122, 55);
+    position:relative;
+}
+.image > div{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.35);
+    width: 100%;
+    text-align: center;
+    position:absolute;
+    top: 40vh;
+}
+.form{
+    width: 65vw;
+}
