@@ -14,18 +14,46 @@
         </div>
     </div>
     <div class="form">
-        <p>This is not a real online service!</p>
+        <p>This is not a real online service! You know you need something like this
+            in your life to help you realize your deepest dreams.
+        </p>
+        <p>Sign up <em>now</em> to get started.</p>
         <p>You know you want to.</p>
 
-        <form>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <button type="submit">Create account</button>
+        <form id="sign-up">
+            <div>
+                <span>
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name">
+                </span>
+                <span>
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name">
+                </span>
+            </div>
+            <div>
+                <span>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email">
+                </span>
+                <span>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="phone">
+                </span>
+            </div>
+            <div>
+                <span>
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password" id="pwd" name="pwd">
+                </span>
+                <span>
+                    <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-pwd" name="confirm-pwd">
+                </span>
+            </div>
         </form>
+        <button type="submit" form="sign-up">Create account</button>
+
     </div>
 </body>
 </html>

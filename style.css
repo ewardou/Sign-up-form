@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{ 
     display: flex;
@@ -21,4 +22,12 @@ body{
 }
 .form{
     width: 65vw;
+    padding: max(10px,2vw);
+    padding-top:20vh;
+}
+span{
+    display: inline-block;
+}
+label{
+    display: block;
 }
