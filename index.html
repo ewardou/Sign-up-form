@@ -18,9 +18,11 @@
             in your life to help you realize your deepest dreams.
         </p>
         <p>Sign up <em>now</em> to get started.</p>
+        <br>
         <p>You know you want to.</p>
 
         <form id="sign-up">
+            <p>Let's do this!</p>
             <div>
                 <span>
                     <label for="first-name">FIRST NAME</label>
@@ -50,10 +52,33 @@
                     <label for="confirm-pwd">CONFIRM PASSWORD</label>
                     <input type="password" id="confirm-pwd" name="confirm-pwd">
                 </span>
+                <p class="error-message"></p>
             </div>
         </form>
         <button type="submit" form="sign-up">Create account</button>
-
+        <p>Already have an account? <a href="#">Log in</a></p>
     </div>
+
+    <script>
+        const pwdInput=document.querySelector('#pwd');
+        const pwdConfirmInput=document.querySelector('#confirm-pwd');
+        const errorMessage=document.querySelector(".error-message")
+
+        pwdInput.addEventListener("change", checkEquality);
+        pwdConfirmInput.addEventListener("change",checkEquality);
+        
+        function checkEquality(){
+            if (pwdInput.value!=pwdConfirmInput.value){
+                pwdInput.classList.add("error");
+                pwdConfirmInput.classList.add("error");
+                errorMessage.textContent="*Passwords do not match";
+            } else {
+                pwdInput.classList.remove("error");
+                pwdConfirmInput.classList.remove("error");
+                errorMessage.textContent="";
+            }
+        }
+
+    </script>
 </body>
 </html>

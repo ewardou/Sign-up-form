@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
+
 body{ 
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 .image{
     width: 35vw;
@@ -22,12 +26,85 @@ body{
 }
 .form{
     width: 65vw;
-    padding: max(10px,2vw);
-    padding-top:20vh;
+    padding-top:15vh;
+}
+.form > *{
+    padding-left: max(10px,2vw);
 }
 span{
     display: inline-block;
 }
 label{
     display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(95, 92, 92);
+}
+button{
+    padding:10px 20px;
+    margin:15px 0px;
+    margin-left: max(10px,2vw);
+    border-radius: 5px;
+    border:none;
+    background-color: #596d48;
+    color:white;
+    font-weight: bold;
+    box-shadow: 0px 1px 4px 1px #8c8282;
+}
+.form > p:nth-of-type(-n+3){
+    font-weight: bold;
+    width: 70%;
+    font-size: 1.1rem;
+}
+.form > p:last-of-type{
+    margin-bottom:15px;
+    font-size: 0.9rem;
+}
+form{
+    background-color: white;
+    margin-top:3vh;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px #c4c0c0;
+}
+input{
+    width: min(220px,20vw);
+    border:1px solid lightgrey;
+    border-radius: 5px;
+    padding:5px;
+}
+input:focus{
+    outline:1px solid dodgerblue;
+    box-shadow: 2px 2px 5px 0px grey;
+}
+span + span{
+    margin-left: 20px;
+}
+form > div + div{
+    margin-top:15px;
+}
+form>p{
+    color:rgb(95, 92, 92);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+a{
+    text-decoration: none;
+    color:#596d48;
+}
+button:hover{
+    background-color: #88a36f;
+}
+a:hover{
+    color:#88a36f;
+}
+.error{
+    border-color:red;
+}
+.error-message{
+    --space:0.8rem;
+    color:red;
+    font-size: var(--space);
+    height: var(--space);
 }
