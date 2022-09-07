@@ -1,1 +1,1 @@
-# Sign-up-form
+Simple sing-up form created to practice the use of form elements and how to lay them out using the position property and more advanced css selectors. 
